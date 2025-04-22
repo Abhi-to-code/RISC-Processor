@@ -40,7 +40,8 @@ always @(*) begin
     if (id_ex_memread && ((id_ex_rn2 == if_id_rn1) || (id_ex_rn2 == if_id_rn2))) begin
         pc_write <= 0;
         IFIDWrite <= 0;
-        ST <= 1;      
+        ST <= 1;
+				EnIW <= 0;      
     end
 end
 endmodule
