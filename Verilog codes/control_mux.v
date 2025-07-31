@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09.04.2025 22:06:32
+// Create Date: 01.07.2025 10:04:55
 // Design Name: 
 // Module Name: control_mux
 // Project Name: 
@@ -21,9 +21,9 @@
 
 
 module control_mux(
-input [6:0] a,
+input [7:0] a,
 input ST,
-output reg [6:0] control
+output reg [7:0] control
 );
 
 always @(*) begin
