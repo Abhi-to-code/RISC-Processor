@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 12.04.2025 20:39:59
+// Create Date: 01.07.2025 10:03:51
 // Design Name: 
 // Module Name: hazard_detection
 // Project Name: 
@@ -38,10 +38,18 @@ always @(*) begin
     //default no stall
     
     if (id_ex_memread && ((id_ex_rn2 == if_id_rn1) || (id_ex_rn2 == if_id_rn2))) begin
-        pc_write <= 0;
-        IFIDWrite <= 0;
-        ST <= 1;
-				EnIW <= 0;      
+        pc_write = 0;
+        IFIDWrite = 0;
+        ST = 1;
+        EnIW = 0;      
     end
+    else begin
+        pc_write = 1;
+        IFIDWrite = 1;
+        ST = 0;
+        EnIW = 1;      
+    end
+    
 end
 endmodule
+
