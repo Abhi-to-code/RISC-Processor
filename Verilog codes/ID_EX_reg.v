@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09.04.2025 21:12:58
+// Create Date: 01.07.2025 10:06:37
 // Design Name: 
 // Module Name: ID_EX_reg
 // Project Name: 
@@ -22,8 +22,8 @@
 
 module ID_EX_reg(
 input clk,
-input [114:0] in,
-output reg [114:0] out
+input [115:0] in,
+output reg [115:0] out
 );
 //initial out = 115'b0;
 always @(posedge clk) begin
