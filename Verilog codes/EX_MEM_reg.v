@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09.04.2025 22:27:42
+// Create Date: 01.07.2025 10:10:38
 // Design Name: 
-// Module Name: EX_MEM_reg
+// Module Name: EX_MEM_REG
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,14 +19,13 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module EX_MEM_reg(
 input clk,
-input [70:0] in,
-output reg [70:0] out
+input [71:0] in,
+output reg [71:0] out
 );
 
-initial out = 71'b00;
+initial out = 72'b00;
 
 always @(posedge clk) begin
     out <= in;
