@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 09.04.2025 22:39:12
+// Create Date: 01.07.2025 10:12:26
 // Design Name: 
 // Module Name: MEM_WB_reg
 // Project Name: 
@@ -19,14 +19,13 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module MEM_WB_reg(
 input clk,
-input [37:0] in,
-output reg [37:0] out
+input [70:0] in,
+output reg [70:0] out
 );
 
-initial out <=  38'b0;
+initial out <=  71'b0;
 always @(posedge clk) begin
     out <= in;
 end
